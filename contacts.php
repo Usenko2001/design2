@@ -29,7 +29,7 @@ include 'connect.php';
                 <div class="row gy-3 mb-5 flex-column-reverse flex-md-row">
 
                   <div class="col-md-6 mt-5 px-md-5">
-                    <img src="/img/contact.jpg" class="img-contact d-flex justify-content-center"/>
+                    <img src="<?= getSetting('img-contact')?>" class="img-contact d-flex justify-content-center"/>
                   </div>
 
                   <div class="col-md-6 mt-5 ">

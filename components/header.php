@@ -43,24 +43,25 @@
   </div>
 
 
-  <div class="text-center">
-    <div class="d-flex mt-3">
+  <div class="bg-white-wood text-center py-3">
+
+    <div class="d-flex mb-4">
       <a href="/index.php" class="mobile-link">главная</a>
     </div>
 
-    <div class="d-flex mt-3">
+    <div class="d-flex mb-4">
       <a href="/cup.php" class="mobile-link">кружки</a>
     </div>
 
-    <div class="d-flex mt-3">
+    <div class="d-flex mb-4">
       <a href="/t-shirt.php" class="mobile-link">футболки</a>
     </div>
 
-    <div class="d-flex mt-3">
+    <div class="d-flex mb-4">
       <a href="/souvenir.php" class="mobile-link">сувениры</a>
     </div>
 
-    <div class="d-flex mt-3">
+    <div class="d-flex ">
       <a href="/contacts.php" class="mobile-link">контакты</a>
     </div>
 

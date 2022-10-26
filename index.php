@@ -34,10 +34,7 @@ include 'connect.php';
           </div>
         </div>
         <div class="col-md-6 mt-5">
-            <?=
-            getSetting('index.photo-design-men')
-            ?>
-            <img src="/img/desigen-men.jpg" class="img-index d-flex justify-content-center"/>
+            <img src="<?=getSetting('design-men')?>" class="img-index d-flex justify-content-center"/>
         </div>
         <div class="col-md-6 mt-5">
           <div class="title-description-text-white text-center mb-5">
@@ -82,18 +79,18 @@ include 'connect.php';
           </div>
         </div>
           <div class="col-md-4 col-6 text-center mt-5">
-            <?= getSetting('index.suvenir-first-img')?>
-            <img src="/img/galary-suvenir/suv1.jpg" class="img-catalog-index"/>
+
+            <img src="<?= getSetting('index.img-suv1')?>" class="img-catalog-index"/>
           </div>
 
           <div class="col-md-4 col-6 text-center mt-5">
-              <?= getSetting('index.suvenir-second-img')?>
-            <img src="/img/galary-suvenir/suv2.jpg" class="img-catalog-index"/>
+
+            <img src="<?= getSetting('index.img-suv2')?>" class="img-catalog-index"/>
           </div>
 
           <div class="col-md-4 col-6 d-none d-md-block text-center mt-5 mb-5">
-              <?= getSetting('index.suvenir-third-img')?>
-            <img src="/img/galary-suvenir/suv3.jpg" class="img-catalog-index"/>
+
+            <img src="<?= getSetting('index.img-suv3')?>" class="img-catalog-index"/>
           </div>
       </div>
       <div class="col-md-12 text-center mt-5 py-5">
@@ -140,8 +137,7 @@ include 'connect.php';
           </div>
 
           <div class="col-md-6 mt-5">
-              <?=getSetting('index.img-uslugi')?>
-            <img src="/img/photo-uslugi.jpg" class="img-index d-flex justify-content-center"/>
+            <img src="<?=getSetting('img-uslugi')?>" class="img-index d-flex justify-content-center"/>
           </div>
 
       </div>

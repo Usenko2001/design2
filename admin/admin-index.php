@@ -5,6 +5,15 @@ $user = $_SESSION['currentUser'] ?? null;
 
 include '../connect.php';
 
+$image_design = getSetting('design-men',"");
+
+$image_suv1 = getSetting('index.img-suv1',"");
+$image_suv2 = getSetting('index.img-suv2',"");
+$image_suv3 = getSetting('index.img-suv3',"");
+
+
+$image_uslugi = getSetting('img-uslugi',"");
+$v = 2;
 ?>
 
 <!doctype html>
@@ -115,7 +124,6 @@ include '../connect.php';
                         <div class="line text-center mb-5"></div>
 
 
-
                         <div class="col-md-12 mb-5">
                             <div class="title-description-text-white text-center mb-3">
                                 Редактировать фото "о дизайнере"
@@ -123,7 +131,7 @@ include '../connect.php';
                             <div class="">
                                 <input type="text" class="input-admin mb-3"
                                        name="design-men"
-                                       value="<?=getSetting('design-men')?>">
+                                       value="<?= $image_design?>">
                             </div>
                         </div>
 
@@ -139,6 +147,51 @@ include '../connect.php';
                                 <input type="text" class="input-admin mb-3"
                                        name="index.title-suvenir"
                                        value="<?=getSetting('index.title-suvenir')?>">
+                            </div>
+                        </div>
+
+                        <div class="line text-center mb-5"></div>
+
+
+
+                        <div class="col-md-12 mb-5">
+                            <div class="title-description-text-white text-center mb-3">
+                                Редактировать первую фотографию сувениров на главной
+                            </div>
+                            <div class="">
+                                <input type="text" class="input-admin mb-3"
+                                       name="index.img-suv1"
+                                       value="<?= $image_suv1?>">
+                            </div>
+                        </div>
+
+                        <div class="line text-center mb-5"></div>
+
+
+
+                        <div class="col-md-12 mb-5">
+                            <div class="title-description-text-white text-center mb-3">
+                              Редактировать вторую фотографию сувениров на главной
+                            </div>
+                            <div class="">
+                                <input type="text" class="input-admin mb-3"
+                                       name="index.img-suv2"
+                                       value="<?= $image_suv2?>">
+                            </div>
+                        </div>
+
+                        <div class="line text-center mb-5"></div>
+
+
+
+                        <div class="col-md-12 mb-5">
+                            <div class="title-description-text-white text-center mb-3">
+                              Редактировать третью фотографию сувениров на главной
+                            </div>
+                            <div class="">
+                                <input type="text" class="input-admin mb-3"
+                                       name="index.img-suv3"
+                                       value="<?= $image_suv3?>">
                             </div>
                         </div>
 
@@ -227,8 +280,8 @@ include '../connect.php';
                             </div>
                             <div class="">
                                 <input type="text" class="input-admin mb-3"
-                                       name="index.img-uslugi"
-                                       value="<?=getSetting('index.img-uslugi')?>">
+                                       name="img-uslugi"
+                                       value="<?= $image_uslugi?>">
                             </div>
                         </div>
 

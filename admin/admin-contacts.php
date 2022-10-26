@@ -5,6 +5,9 @@ $user = $_SESSION['currentUser'] ?? null;
 
 include '../connect.php';
 
+$image_contact = getSetting('img-contact',"");
+$v = 2;
+
 ?>
 
 <!doctype html>
@@ -62,6 +65,21 @@ include '../components/header-admin.php';
                             <input type="text" class="input-admin mb-3"
                                    name="contact.description-title-text"
                                    value="<?=getSetting('contact.description-title-text')?>">
+                        </div>
+                    </div>
+
+                    <div class="line text-center mb-5"></div>
+
+
+
+                    <div class="col-md-12 mb-5">
+                        <div class="title-description-text-white text-center mb-3">
+                            Редактировать фотографию в контактах
+                        </div>
+                        <div class="">
+                            <input type="text" class="input-admin mb-3"
+                                   name="img-contact"
+                                   value="<?= $image_contact?>">
                         </div>
                     </div>
 
