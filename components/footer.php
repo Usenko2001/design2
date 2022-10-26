@@ -31,7 +31,7 @@
 
                   <div class="col-md-4 text-start">
                     <a href="#" class="podval-text">
-                      Все права защищены © 2022
+                      Все права защищены © 2022 asdasd
                     </a>
                   </div>
 
