@@ -1,3 +1,13 @@
+
+<?php
+session_start();
+
+$user = $_SESSION['currentUser'] ?? null;
+
+include 'connect.php';
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,21 +31,21 @@
             </div>
           </div>
 
-          <div class="col-md-4 text-center mt-5">
-            <img src="img/tshort1.jpg" class="img-catalog"/>
+          <div class="col-md-4 col-6 text-center mt-5">
+            <img src="img/galary-t-shirt/tshort1.jpg" class="img-catalog"/>
           </div>
 
-          <div class="col-md-4 text-center mt-5">
-            <img src="img/tshort2.jpg" class="img-catalog"/>
+          <div class="col-md-4 col-6 text-center mt-5">
+            <img src="img/galary-t-shirt/tshort2.jpg" class="img-catalog"/>
           </div>
 
-          <div class="col-md-4 text-center mt-5 mb-5">
-            <img src="img/tshort3.jpg" class="img-catalog"/>
+          <div class="col-md-4 d-none d-md-block text-center mt-5 mb-mt-5">
+            <img src="img/galary-t-shirt/tshort3.jpg" class="img-catalog"/>
           </div>
         </div>
 
         <div class="col-md-12 text-center mt-5 py-5">
-          <a href="#" class="btn-site">галерея футболок</a>
+          <a href="t-shirt.php" class="btn-site">галерея футболок</a>
         </div>
       </div>
     </div>
@@ -54,21 +64,21 @@
             </div>
           </div>
 
-          <div class="col-md-4 text-center mt-5">
-            <img src="img/cup1.jpg " class="img-catalog"/>
+          <div class="col-md-4 col-6 text-center mt-5">
+            <img src="img/galary-cup/cup1.jpg " class="img-catalog"/>
           </div>
 
-          <div class="col-md-4 text-center mt-5">
-            <img src="img/cup2.jpg" class="img-catalog"/>
+          <div class="col-md-4 col-6 text-center mt-5">
+            <img src="img/galary-cup/cup2.jpg" class="img-catalog"/>
           </div>
 
-          <div class="col-md-4 text-center mt-5 mb-5">
-            <img src="img/cup1.jpg" class="img-catalog"/>
+          <div class="col-md-4 d-none d-md-block text-center mt-5 mb-mt-5">
+            <img src="img/galary-cup/cup1.jpg" class="img-catalog"/>
           </div>
         </div>
 
         <div class="col-md-12 text-center mt-5 py-5">
-          <a href="#" class="btn-site">галерея кружек</a>
+          <a href="cup.php" class="btn-site">галерея кружек</a>
         </div>
       </div>
     </div>
@@ -87,21 +97,21 @@
           </div>
         </div>
 
-        <div class="col-md-4 text-center mt-5">
-          <img src="img/suv1.jpg" class="img-catalog"/>
+        <div class="col-md-4 col-6 text-center mt-5">
+          <img src="img/galary-suvenir/suv1.jpg" class="img-catalog"/>
         </div>
 
-        <div class="col-md-4 text-center mt-5">
-          <img src="img/suv2.jpg" class="img-catalog"/>
+        <div class="col-md-4 col-6 text-center mt-5">
+          <img src="img/galary-suvenir/suv2.jpg" class="img-catalog"/>
         </div>
 
-        <div class="col-md-4 text-center mt-5 mb-5">
-          <img src="img/suv3.jpg" class="img-catalog"/>
+        <div class="col-md-4 d-none d-md-block text-center mt-5 mb-mt-5">
+          <img src="img/galary-suvenir/suv3.jpg" class="img-catalog"/>
         </div>
       </div>
 
       <div class="col-md-12 text-center mt-5 py-5">
-        <a href="#" class="btn-site">галерея сувениров</a>
+        <a href="souvenir.php" class="btn-site">галерея сувениров</a>
       </div>
 
     </div>

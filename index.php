@@ -1,8 +1,19 @@
+
+<?php
+session_start();
+
+$user = $_SESSION['currentUser'] ?? null;
+
+include 'connect.php';
+
+?>
+
+
 <!doctype html>
 <html lang="en">
 <head>
 <? include 'components/htmlHeader.php'?>
-    <title>Design</title>
+    <title>Made-in-Kamchatka</title>
 </head>
 <body>
 
@@ -19,24 +30,34 @@
       <div class="row gy-3 flex-md-row mb-5">
         <div class="col-md-12">
           <div class="title-text-white text-center mt-md-5 mb-md-5">
-            несколько слов о дизайнере
+            <?=getSetting('index.title-design-men', 'несколько слов о дизайнере')?>
           </div>
         </div>
         <div class="col-md-6 mt-5">
+            <?=
+            getSetting('index.photo-design-men')
+            ?>
             <img src="/img/desigen-men.jpg" class="img-index d-flex justify-content-center"/>
         </div>
         <div class="col-md-6 mt-5">
           <div class="title-description-text-white text-center mb-5">
-            Образование
+            <?= getSetting('index.header-design-men', 'Образование')?>
           </div>
           <div class="description-text-white ms-md-5 mb-3">
-            Художка на Камчатке
+            <?=
+            getSetting('index.header-1paragraph-design-men', 'Художка на Камчатке')
+            ?>
           </div>
           <div class="description-text-white ms-md-5 mb-3">
-            Художка в Санкт-Петербурге
+              <?=
+              getSetting('index.header-2paragraph-design-men', 'Художка в Санкт-Петербурге')
+              ?>
+
           </div>
           <div class="description-text-white ms-md-5 mb-3">
-            Преподпователь в художке
+              <?=
+              getSetting('index.header-3paragraph-design-men', 'Преподпователь в художке')
+              ?>
           </div>
         </div>
       </div>
@@ -56,19 +77,23 @@
         <div class="col-md-12 block-empty"></div>
         <div class="col-md-12">
           <div class="title-text-white text-center mt-md-5 mb-md-5">
-            изготовление сувениров
+            <?= getSetting('index.title-suvenir', 'изготовление сувениров')?>
+
           </div>
         </div>
-          <div class="col-md-4 text-center mt-5">
-            <img src="/img/suv1.jpg" class="img-catalog-index"/>
+          <div class="col-md-4 col-6 text-center mt-5">
+            <?= getSetting('index.suvenir-first-img')?>
+            <img src="/img/galary-suvenir/suv1.jpg" class="img-catalog-index"/>
           </div>
 
-          <div class="col-md-4 text-center mt-5">
-            <img src="/img/suv2.jpg" class="img-catalog-index"/>
+          <div class="col-md-4 col-6 text-center mt-5">
+              <?= getSetting('index.suvenir-second-img')?>
+            <img src="/img/galary-suvenir/suv2.jpg" class="img-catalog-index"/>
           </div>
 
-          <div class="col-md-4 text-center mt-5 mb-5">
-            <img src="/img/suv3.jpg" class="img-catalog-index"/>
+          <div class="col-md-4 col-6 d-none d-md-block text-center mt-5 mb-5">
+              <?= getSetting('index.suvenir-third-img')?>
+            <img src="/img/galary-suvenir/suv3.jpg" class="img-catalog-index"/>
           </div>
       </div>
       <div class="col-md-12 text-center mt-5 py-5">
@@ -85,22 +110,24 @@
   <div class="mainbg-content">
     <div class="wrapper py-5">
       <div class="title-text-white text-center mt-md-5 mb-md-5">
-        услуги
+          <?= getSetting('index.title-uslugi', 'услуги')?>
+
       </div>
       <div class="row gy-3 mb-5 flex-column-reverse flex-md-row">
 
           <div class="col-md-6 mt-5">
             <div class="title-description-text-white text-center mb-5">
-              Виды моих услуг
+                <?= getSetting('index.description-title-uslugi', 'Виды моих услуг')?>
+
             </div>
             <div class="description-text-white mb-2">
-              Печать на футболках
+                <?= getSetting('index.first-text-uslugi', 'Печать на футболках')?>
             </div>
             <div class="description-text-white mb-2">
-              Печать на кружках
+                <?= getSetting('index.second-text-uslugi', 'Печать на кружках')?>
             </div>
             <div class="description-text-white mb-2">
-              Изготовление сувениров
+                <?= getSetting('index.third-text-uslugi', 'Изготовление сувениров')?>
             </div>
 
             <div class="mt-mb-5"></div>
@@ -113,6 +140,7 @@
           </div>
 
           <div class="col-md-6 mt-5">
+              <?=getSetting('index.img-uslugi')?>
             <img src="/img/photo-uslugi.jpg" class="img-index d-flex justify-content-center"/>
           </div>
 

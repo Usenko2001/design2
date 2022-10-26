@@ -10,13 +10,13 @@
                       </div>
 
                       <div class="col-md-4 text-center">
-                          <a href="#" class="footer-link">
+                          <a href="tel:+79146221122" class="footer-link">
                               89146221122
                           </a>
                       </div>
 
                       <div class="col-md-4 text-end">
-                          <a href="#" class="footer-link">
+                          <a href="mailto:usenko71@mail.ru" class="footer-link">
                               usenko71@mail.ru
                           </a>
                       </div>
