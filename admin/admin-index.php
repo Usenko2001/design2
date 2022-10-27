@@ -4,6 +4,8 @@ session_start();
 $user = $_SESSION['currentUser'] ?? null;
 
 include '../connect.php';
+include '../admin-check.php';
+redirectIfNotAdmin('/adminka.php');
 
 $image_design = getSetting('design-men',"");
 

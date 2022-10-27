@@ -5,6 +5,9 @@ $user = $_SESSION['currentUser'] ?? null;
 
 include '../connect.php';
 
+include '../admin-check.php';
+redirectIfNotAdmin('/');
+
 $image_contact = getSetting('img-contact',"");
 $v = 2;
 

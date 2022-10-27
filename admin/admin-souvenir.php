@@ -6,6 +6,8 @@ session_start();
 $user = $_SESSION['currentUser'] ?? null;
 
 include '../connect.php';
+include '../admin-check.php';
+redirectIfNotAdmin('/');
 
 //$_image= $_image ?? "img/galary-cup/cup1.jpg";
 $images = json_decode(getSetting('galary.images-suvenir',"[]"), true);

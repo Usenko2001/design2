@@ -4,6 +4,9 @@
 session_start();
 
 $user = $_SESSION['currentUser'] ?? null;
+include '../admin-check.php';
+redirectIfNotAdmin('/');
+
 
 include '../connect.php';
 
