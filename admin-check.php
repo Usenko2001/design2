@@ -2,6 +2,8 @@
 session_start();
 $GLOBALS['user'] = $user = $_SESSION['currentUser'] ?? null;
 $v = 3;
+
+
 function getUser(){
     return $GLOBALS['user'] ?? null;
 }
